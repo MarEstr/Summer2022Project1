@@ -2,8 +2,8 @@
 
 include 'configdata.php';
 
-$con=mysql_connect("$host","$username","$password") or die ("Server Connection Error");
-mysql_select_db("$database") or die ("Database Connection Error");
+$con=mysqli_connect("$host","$username","$password") or die ("Server Connection Error");
+mysqli_select_db($con, "$database") or die ("Database Connection Error");
 
 if($con==true) 
 {
